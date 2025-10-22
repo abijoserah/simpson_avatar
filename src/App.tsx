@@ -17,7 +17,7 @@ function App() {
   ]
   return (
     <>
-      {Simpsons.map((eachSim) => <Avatar simpson={eachSim} />)}
+      {Simpsons.map((eachSim) => <Avatar {...eachSim} />)}
     </>
   )
 }
