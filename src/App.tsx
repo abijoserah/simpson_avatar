@@ -1,10 +1,10 @@
 
 import './App.css'
-import Avatar, { type AvatarProps } from './Avatar'
+import Avatar from './Avatar'
 
 function App() {
 
-  const Simpsons: AvatarProps[] = [{
+  const Simpsons = [{
     image: "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
     firstName: "Bart",
     lastName: "Simpson"
@@ -17,7 +17,7 @@ function App() {
   ]
   return (
     <>
-      {Simpsons.map(simpson => <Avatar avatar={simpson} />)}
+      {Simpsons.map((eachSim) => <Avatar simpson={eachSim} />)}
     </>
   )
 }

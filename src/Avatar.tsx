@@ -1,15 +1,9 @@
-export interface AvatarProps {
-    image: string
-    firstName: string
-    lastName: string
-}
 
-export default function Avatar(props: { avatar: AvatarProps }) {
-    const { firstName, image, lastName } = props.avatar
+export default function Avatar({ simpson }) {
     return (
         <div>
-            <img src={image} />
-            <span>{firstName} {lastName}</span>
+            <img src={simpson.image} />
+            <span>{simpson.firstName} {simpson.lastName}</span>
         </div>
     )
 }
